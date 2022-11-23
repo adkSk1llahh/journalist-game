@@ -4,7 +4,7 @@ import {Button, Row, Col, Typography} from "antd";
 
 const MainPage = () => {
   let style = {
-    background: 'linear-gradient(90deg, rgba(0,9,255,0.38699229691876746) 0%, rgba(255,0,26,0.4290091036414566) 100%)',
+    background: 'linear-gradient(90deg, rgb(0 9 255 / 76%) 0%, rgb(137 0 255) 100%)',
     padding: 24,
     borderRadius: 24
   }
@@ -12,7 +12,7 @@ const MainPage = () => {
     <MyLayout>
       <Row align='middle' justify='center' style={{height: '100%'}}>
         <Col span={18} style={style}>
-          <Typography.Text style={{fontSize: 20}}>
+          <Typography.Text style={{fontSize: 20, color: '#fff'}}>
             Казахстанские журналисты очень часто сталкиваются с ситуациями, выход из которых необходимо искать в
             правовом поле. Цель тренажера – оказать содействие и пресс-секретарям, и журналистам и тем кто, считает себя
             активным игроком медиапрострнаства. Это платформа называется «Коммуникативный онлайн-тренажер «4J». Мы очень
