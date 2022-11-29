@@ -20,107 +20,44 @@ export const catalogData = [
   {
     id: 1,
     key: 'data',
-    title: 'data',
-    description: 'lorem ipsum',
-    img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    title: 'Распространенная практика - Нападение на журналистов',
+    description: null,
+    img: null,
 
-    role: [
+    children: [
       {
         id: 1,
-        title: 'role1',
-        description: 'lorem ipsum',
-        img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+        title: 'title1',
+        description: null,
+        img: null,
         children: [
           {
             id: 1,
             sender: 1,
-            img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-            text: 'lorem ipsum',
-            variant: 'first variant',
+            img: null,
+            text: 'qwe',
+            description: null,
             children: [
-              {
-                id: 1,
-                sender: 1,
-                img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                text: 'lorem ipsum',
-                variant: 'first variant',
-                children: [
-                  {
-                    id: 1,
-                    sender: 1,
-                    img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                    text: 'lorem ipsum',
-                    variant: 'first variant',
-                    children: [
 
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            id: 2,
-            sender: 1,
-            img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-            text: 'lorem ipsum321',
-            variant: 'first variant',
-            children: [
-              {
-                id: 1,
-                sender: 1,
-                img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                text: 'lorem ipsum',
-                variant: 'first variant',
-                children: [
-                  {
-                    id: 1,
-                    sender: 1,
-                    img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                    text: 'lorem ipsum',
-                    variant: 'first variant',
-                    children: [
-
-                    ]
-                  }
-                ]
-              }
             ]
           },
         ]
       },
+
       {
         id: 2,
-        title: 'role2',
-        description: 'lorem ipsum',
-        img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+        title: 'title2',
+        description: null,
+        img: null,
         children: [
           {
             id: 1,
             sender: 1,
-            img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-            text: 'lorem ipsum',
-            variant: 'first variant',
+            img: null,
+            text: 'asd',
+            description: null,
             children: [
-              {
-                id: 1,
-                sender: 1,
-                img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                text: 'lorem ipsum',
-                variant: 'first variant',
-                children: [
-                  {
-                    id: 1,
-                    sender: 1,
-                    img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-                    text: 'lorem ipsum',
-                    variant: 'first variant',
-                    children: [
 
-                    ]
-                  }
-                ]
-              }
             ]
           },
         ]

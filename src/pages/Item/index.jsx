@@ -12,7 +12,7 @@ const ItemPage = () => {
   const [currentItem, setCurrentItem] = useState()
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const [role, setRole] = useState()
+  const [situation, setSituation] = useState()
   const [data, setData] = useState([])
 
   useEffect(() => {
@@ -22,13 +22,14 @@ const ItemPage = () => {
     }
   }, [params.id])
 
-  const handleRole = (item) => {
-    setRole(item)
+  const handleSituation = (item) => {
+    setSituation(item)
     setData(item.children)
   }
 
 
-  console.log('role', role)
+  console.log('situation', situation)
+  console.log('data', data)
 
   return (
     <MyLayout>
@@ -54,19 +55,19 @@ const ItemPage = () => {
           <Col span={12}>
             <Row>
               <Col span={24}>
-                {!role &&
-                <Typography.Title level={3}>Выберите роль</Typography.Title>
+                {!situation &&
+                <Typography.Title level={3}>Ситуация</Typography.Title>
                 }
               </Col>
 
               {
-                !role ?
+                !situation ?
                   <Col span={24}>
                     <Row gutter={12}>
-                      {currentItem.role.map(item => (
+                      {currentItem.children.map(item => (
                         <Col key={item.id}>
                           <Card
-                            onClick={() => handleRole(item)}
+                            onClick={() => handleSituation(item)}
                             hoverable
                             style={{
                               width: 240,
@@ -88,7 +89,7 @@ const ItemPage = () => {
                     <Row>
                       {data.map(item => (
                         <Col span={24} key={item.id} style={{marginBottom: 12}}>
-                          <Alert message={item.text} type="success" />
+                          <Alert message={item.text} type="success"/>
                         </Col>
                       ))}
                     </Row>
